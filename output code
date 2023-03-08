@@ -37,8 +37,8 @@ def get_sensor_data():
 
     return sensor_data
 
-# Define the '/assignment6/api/sensors' endpoint
-@app.route('/assignment6/api/sensors', methods=['GET'])
+# Define the '/api/sensors' endpoint
+@app.route('/api/sensors', methods=['GET'])
 def sensors():
     # Call the helper function to get the last 10 sensor data row inserts from the database
     sensor_data = get_sensor_data()
